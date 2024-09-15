@@ -33,4 +33,8 @@ public class Contact {
     //販売できた人数を出力
     System.out.println(hanbaisu);
     }
+
+     //販売できた人数を出力
+     System.out.println(hanbaisu);
+    
 }
