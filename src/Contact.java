@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Contact {
 
     public static void main(String[] args) {
@@ -7,7 +9,7 @@ public class Contact {
         int dosu = sc.nextInt();
         int[] stock = new int[dosu + 1];
         
-        for (int i = 0; i < dosu; i++) {
+        for (int i = 1; i < dosu + 1; i++) {
             stock[i] = sc.nextInt();
         }
 
@@ -20,18 +22,15 @@ public class Contact {
         for(int j = 0; j < kyaku; j++) {
             int R_j = sc.nextInt();
             int L_j = sc.nextInt();
-
-        }
         
-        // 在庫が右目と左目両方にあるか確認
-        if(stock[R_j] > 0 && stock[L_j] > 0) {
-            stock[R_j]--;
-            stock[L_j]--;
-            hanbaisu++;
+          // 在庫が右目と左目両方にあるか確認
+          if(stock[R_j] > 0 && stock[L_j] > 0) {
+              stock[R_j]--;
+              stock[L_j]--;
+              hanbaisu++;
+          } 
         }
-        
-        //販売できた人数を出力
-        System.out.println(hanbaisu);
-
+    //販売できた人数を出力
+    System.out.println(hanbaisu);
     }
 }
