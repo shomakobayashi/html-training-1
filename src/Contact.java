@@ -9,7 +9,7 @@ public class Contact {
         int dosu = sc.nextInt();
         int[] stock = new int[dosu + 1];
         
-        for (int i = 1; i < dosu + 1; i++) {
+        for (int i = 1; i <= dosu; i++) {
             stock[i] = sc.nextInt();
         }
 
@@ -32,9 +32,5 @@ public class Contact {
         }
     //販売できた人数を出力
     System.out.println(hanbaisu);
-    }
-
-     //販売できた人数を出力
-     System.out.println(hanbaisu);
-    
+    }    
 }
