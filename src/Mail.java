@@ -8,9 +8,9 @@ public class Mail {
     
     // 広告と判定するワードSを入力
     String words = sc.nextLine();
-    
      // メールの件数Nを入力
-    int num = sc.nextInt();
+    int num = sc.nextInt()
+    sc.nextLine(); 
      
     for (int i = 0; i < num; i++) {
       String title = sc.nextLine();
